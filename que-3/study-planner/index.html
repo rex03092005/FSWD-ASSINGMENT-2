@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Planner</h1>
+        
+        <div class="form">
+            <input type="text" id="topic" placeholder="Study Topic">
+            <input type="datetime-local" id="sessionTime">
+            <input type="number" id="duration" placeholder="Duration (minutes)">
+            <button id="addSessionBtn">Add Session</button>
+        </div>
+
+        <h2>Today's Sessions</h2>
+        <ul id="todaySessions"></ul>
+
+        <button id="fetchMaterialsBtn">Fetch Study Materials</button>
+        <p id="materialsStatus"></p>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
